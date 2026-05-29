@@ -19,7 +19,7 @@ This Python script automatically assigns employees to different seats each day i
 │   ├── file_utils.py
 │   ├── openspace.py
 │   └── table.py
-|
+├── .gitignore
 ├── main.py
 ├── new_colleagues.csv
 ├──notebook_guide.ipynb
