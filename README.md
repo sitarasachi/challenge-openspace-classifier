@@ -13,11 +13,11 @@ This script runs everyday to re-assign everybody to a new seat.
 ## 📦 Repo structure
 
 ```
-.
-├── src/
+├── challenge-openspace-classifier-1/.
+├── utils
+│   ├── file_utils.py
 │   ├── openspace.py
-│   ├── table.py
-│   └── utils.py
+│   └── table.py
 ├── .gitignore
 ├── main.py
 ├── new_colleagues.csv
