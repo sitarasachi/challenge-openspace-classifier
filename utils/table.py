@@ -31,9 +31,11 @@ class Seat:
 
     def remove_occupant(self):
         """The remove_occupant method removes the person sitting in the seat.If someone is sitting,
-        it remembers their name , clears the seat and marks it as free again and also returns the 
-        name of the person who left. If the seat is already free, it prints a message indicating 
+        it remembers their name , clears the seat and marks it as free again and prints the seat status
+        is free and was occupied by with the old person name, also returns the 
+        name of the person(old_name) who left. If the seat is already free, it prints a message indicating 
         that the seat is already free and returns None."""
+        
         if not self.free:
             old_name = self.occupant
             self.occupant = " "

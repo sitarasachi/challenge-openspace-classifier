@@ -12,6 +12,7 @@ class Openspace:
         # FIXED REQUIREMENT: 6 tables of 4 seats
         self.number_of_tables = 6
         self.seats_per_table = 4
+        # Create a list of tables, where each table is an instance of the Table class with the specified capacity 
         self.tables = [Table(self.seats_per_table) for _ in range(self.number_of_tables)]
 
 
@@ -21,7 +22,13 @@ class Openspace:
         each name, trying to assign it to a free seat at any of the tables. IFf a name cannot be
         assigned because there are no free seats left, it prints a message indicating that the person
         could not be seated due to lack of space."""
+
+        # Shuffle the list of names to ensure random seating
+        
         random.shuffle(names)
+
+        # Iterate through each name and try to assign it to a free seat at any of the tables
+        
         for name in names:
             assigned = False
             for table in self.tables:
@@ -35,6 +42,9 @@ class Openspace:
         """The display method prints the current seating arrangement of the tables. It iterates through
         each table and each seat within the table, printing the occupant of each seat or indicating if the
         seat is empty."""
+       
+        # Iterate through each table and each seat within the table
+
         for i, table in enumerate(self.tables):
             print(f"\nTable {i+1}:")
             for j, seat in enumerate(table.seats):
@@ -55,7 +65,9 @@ class Openspace:
                 f.write("\n")
 
 def _str_(self):
-    """The __str__ method provides a string representation of the Openspace object. It constructs a string that lists the status of each table and seat."""
+    """The __str__ method provides a string representation of the Openspace object.
+    It constructs a string that lists the status of each table and seat."""
+    # Construct a string that lists the status of each table and seat
     result = "Openspace:\n"
     for i, table in enumerate(self.tables):
         result += f"  Table {i+1}:\n"
