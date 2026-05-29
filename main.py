@@ -1,7 +1,8 @@
 import csv
 
-import pandas as pd
+with open("new_colleagues.csv", newline="") as file:
+    reader = csv.DictReader(file)
 
-df = pd.read_csv("new_colleagues.csv")
+    for row in reader:
+        print(row)
 
-print(df)
