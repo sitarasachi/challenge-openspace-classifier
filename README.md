@@ -1,4 +1,4 @@
-# OpenSpace Organizer
+# CEVI Ghent Open Space Seating System
 [![forthebadge made-with-python](https://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
 
@@ -8,7 +8,7 @@ Your company moved to a new office at CEVI Ghent. Its an openspace with 6 tables
 
 This script runs everyday to re-assign everybody to a new seat.
 
-![coworking_img](https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fGRpdmVyc2UlMjB0ZWFtfGVufDB8fDB8fHwy)
+![coworking_img]https://www.vecteezy.com/vector-art/47422383-discussion-conference-set-people-of-different-ages-sit-and-discuss-on-chairs-around-a-round-table-pro-illustration)
 
 ## 📦 Repo structure
 
@@ -18,9 +18,10 @@ This script runs everyday to re-assign everybody to a new seat.
 │   ├── file_utils.py
 │   ├── openspace.py
 │   └── table.py
-├── .gitignore
+|
 ├── main.py
 ├── new_colleagues.csv
+├──notebook_guide.ipynb
 ├── output.csv
 └── README.md
 ```
