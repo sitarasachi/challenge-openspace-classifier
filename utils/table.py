@@ -106,10 +106,12 @@ class Table:
 
 
 
-def _str__(self):
-    """The __str__ method provides a string representation of the Table object. It constructs a string that lists the status of each seat at the table, indicating whether it is occupied and by whom, or if it is empty."""
-    result = f"Table with capacity {self.capacity}:\n"
-    for i, seat in enumerate(self.seats):
-        status = seat.occupant if not seat.free else "Empty"
-        result += f"  Seat {i+1}: {status}\n"
-    return result
+    def __str__(self):
+        """The __str__ method provides a string representation of the Table object. 
+        It constructs a string that lists the status of each seat at the table, indicating 
+        whether it is occupied and by whom, or if it is empty."""
+        result = f"Table with capacity {self.capacity}:\n"
+        for i, seat in enumerate(self.seats):
+            status = seat.occupant if not seat.free else "Empty"
+            result += f"  Seat {i+1}: {status}\n"
+        return result

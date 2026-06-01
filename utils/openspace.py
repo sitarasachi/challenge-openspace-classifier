@@ -64,14 +64,14 @@ class Openspace:
                     f.write(f"  Seat {j+1}: {status}\n")
                 f.write("\n")
 
-def _str_(self):
-    """The __str__ method provides a string representation of the Openspace object.
-    It constructs a string that lists the status of each table and seat."""
-    # Construct a string that lists the status of each table and seat
-    result = "Openspace:\n"
-    for i, table in enumerate(self.tables):
-        result += f"  Table {i+1}:\n"
-        for j, seat in enumerate(table.seats):
-            status = seat.occupant if not seat.free else "Empty"
-            result += f"    Seat {j+1}: {status}\n"
-    return result
+    def __str_(self):
+        """The __str__ method provides a string representation of the Openspace object.
+        It constructs a string that lists the status of each table and seat."""
+        # Construct a string that lists the status of each table and seat
+        result = "Openspace:\n"
+        for i, table in enumerate(self.tables):
+            result += f"  Table {i+1}:\n"
+            for j, seat in enumerate(table.seats):
+                status = seat.occupant if not seat.free else "Empty"
+                result += f"    Seat {j+1}: {status}\n"
+        return result
